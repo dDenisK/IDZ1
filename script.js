@@ -1,8 +1,8 @@
 function resizeImageMap() {
-    const img = document.getElementById('image');
-    const map = document.getElementById('khmap');
+    const img = document.getElementById('imgImage');
+    const map = document.getElementById('mapKhmap');
     const originalWidth = parseInt(img.getAttribute('data-original-width'), 10);
-    const currentWidth = img.clientWidth; 
+    const currentWidth = img.clientWidth;
     const scaleFactor = currentWidth / originalWidth;
     const areas = map.getElementsByTagName('area');
     for (let area of areas) {
